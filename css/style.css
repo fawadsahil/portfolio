@@ -811,7 +811,18 @@ h3.my-profession
     }
     .home .home-img
     {
-        display: none;
+        /* display: none; */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #home  .row {
+        flex-direction: column-reverse !important;
+    }
+    .home-info{
+        margin-top: 2rem;
+    }
+    .home-img::before{
+        left: 10px;
     }
 }
 @media (max-width:767px)
